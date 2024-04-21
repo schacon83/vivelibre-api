@@ -1,0 +1,28 @@
+{
+    "students": [
+        {"name": "John", "age": 20, "career": "Computer Science"},
+        {"name": "Alice", "age": 22, "career": "Engineering"},
+        {"name": "Bob", "age": 21, "career": "Mathematics"},
+        {"name": "Emma", "age": 23, "career": "Physics"},
+        {"name": "Michael", "age": 22, "career": "Biology"},
+        {"name": "Sophia", "age": 20, "career": "Chemistry"},
+        {"name": "William", "age": 21, "career": "Engineering"},
+        {"name": "Olivia", "age": 22, "career": "Sociology"},
+        {"name": "James", "age": 21, "career": "Economics"},
+        {"name": "Emily", "age": 20, "career": "Engineering"}
+    ],
+    "professors": [
+        {"name": "Dr. Smith", "age": 35, "specialty": "Computer Science"},
+        {"name": "Prof. Johnson", "age": 55, "specialty": "Engineering"},
+        {"name": "Dr. Brown", "age": 40, "specialty": "Mathematics"},
+        {"name": "Prof. Wilson", "age": 48, "specialty": "Physics"},
+        {"name": "Dr. Martinez", "age": 52, "specialty": "Biology"}
+    ],
+    "courses": [
+        {"name": "Introduction to Programming", "duration": "12 weeks", "professor_id": 1},
+        {"name": "Mechanics and Dynamics", "duration": "10 weeks", "professor_id": 4},
+        {"name": "Calculus I", "duration": "14 weeks", "professor_id": 3},
+        {"name": "Cell Biology", "duration": "8 weeks", "professor_id": 5},
+        {"name": "Data Structures and Algorithms", "duration": "16 weeks", "professor_id": 1}
+    ]
+}

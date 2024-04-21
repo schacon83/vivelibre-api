@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Titanic",
+        "director": "James Cameron",
+        "ost": "James Horner",
+        "actors": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Gloria Stuart", "Bill Paxton"],
+        "synopsis": "<p><b>API v2.1</b></p><p>Response:</p>       !!A young artist and a wealthy young woman \n\n\n fall in love aboard the ill-fated maiden ,,, voyage of the RMS Titanic. ????           ",
+        "ratings": {
+            "imdb": 7.8,
+            "rotten_tomatoes": 8.1,
+            "metacritic": 7.5,
+            "filmaffinity": 7.9
+        }
+    },
+    {
+        "name": "Inception",
+        "director": "Christopher Nolan",
+        "ost": "Hans Zimmer",
+        "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page", "Tom Hardy", "Ken Watanabe"],
+        "synopsis": "A mind thief must perform one last job to regain his life by delving into the dreams of others.",
+        "ratings": {
+            "imdb": 8.8,
+            "rotten_tomatoes": 9.2,
+            "metacritic": 8.6,
+            "filmaffinity": 8.7
+        }
+    },
+    {
+        "name": "Shutter Island",
+        "director": "Martin Scorsese",
+        "ost": "Robbie Robertson",
+        "actors": ["Leonardo DiCaprio", "Mark Ruffalo", "Ben Kingsley", "Michelle Williams", "Emily Mortimer"],
+        "synopsis": "Two federal marshals investigate the mysterious disappearance of a patient from a psychiatric hospital.",
+        "ratings": {
+            "imdb": 8.1,
+            "rotten_tomatoes": 8.4,
+            "metacritic": 7.9,
+            "filmaffinity": 8.2
+        }
+    },
+    {
+        "name": "The Great Gatsby",
+        "director": "Baz Luhrmann",
+        "ost": "Craig Armstrong",
+        "actors": ["Leonardo DiCaprio", "Tobey Maguire", "Carey Mulligan", "Joel Edgerton", "Isla Fisher"],
+        "synopsis": "A midwestern war veteran finds himself drawn to the past and lifestyle of his millionaire neighbor.",
+        "ratings": {
+            "imdb": 7.2,
+            "rotten_tomatoes": 7.6,
+            "metacritic": 7.0,
+            "filmaffinity": 7.4
+        }
+    },
+    {
+        "name": "Once Upon a Time in Hollywood",
+        "director": "Quentin Tarantino",
+        "ost": "Various artists",
+        "actors": ["Leonardo DiCaprio", "Brad Pitt", "Margot Robbie", "Emile Hirsch", "Margaret Qualley"],
+        "synopsis": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age.",
+        "ratings": {
+            "imdb": 7.7,
+            "rotten_tomatoes": 8.0,
+            "metacritic": 7.5,
+            "filmaffinity": 7.8
+        }
+    },
+    {
+        "name": "The Departed",
+        "director": "Martin Scorsese",
+        "ost": "Howard Shore",
+        "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson", "Mark Wahlberg", "Martin Sheen"],
+        "synopsis": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+        "ratings": {
+            "imdb": 8.5,
+            "rotten_tomatoes": 8.8,
+            "metacritic": 8.3,
+            "filmaffinity": 8.6
+        }
+    },
+    {
+        "name": "The Revenant",
+        "director": "Alejandro González Iñárritu",
+        "ost": "Ryuichi Sakamoto",
+        "actors": ["Leonardo DiCaprio", "Tom Hardy", "Domhnall Gleeson", "Will Poulter", "Forrest Goodluck"],
+        "synopsis": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
+        "ratings": {
+            "imdb": 8.0,
+            "rotten_tomatoes": 8.4,
+            "metacritic": 7.9,
+            "filmaffinity": 8.2
+        }
+    },
+    {
+        "name": "Catch Me If You Can",
+        "director": "Steven Spielberg",
+        "ost": "John Williams",
+        "actors": ["Leonardo DiCaprio", "Tom Hanks", "Christopher Walken", "Martin Sheen", "Nathalie Baye"],
+        "synopsis": "A seasoned FBI agent pursues a young con artist who successfully impersonated an airline pilot, doctor, and lawyer, cashing millions in fraudulent checks.",
+        "ratings": {
+            "imdb": 8.1,
+            "rotten_tomatoes": 8.3,
+            "metacritic": 7.8,
+            "filmaffinity": 8.0
+        }
+    },
+    {
+        "name": "The Aviator",
+        "director": "Martin Scorsese",
+        "ost": "Howard Shore",
+        "actors": ["Leonardo DiCaprio", "Cate Blanchett", "Kate Beckinsale", "John C. Reilly", "Alec Baldwin"],
+        "synopsis": "A biopic depicting the early years of legendary director and aviator Howard Hughes' career, from the late 1920s to the mid-1940s.",
+        "ratings": {
+            "imdb": 7.5,
+            "rotten_tomatoes": 7.9,
+            "metacritic": 7.3,
+            "filmaffinity": 7.7
+        }
+    },
+    {
+        "name": "Django Unchained",
+        "director": "Quentin Tarantino",
+        "ost": "Various artists",
+        "actors": ["Leonardo DiCaprio", "Jamie Foxx", "Christoph Waltz", "Kerry Washington", "Samuel L. Jackson"],
+        "synopsis": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+        "ratings": {
+            "imdb": 8.4,
+            "rotten_tomatoes": 8.7,
+            "metacritic": 8.2,
+            "filmaffinity": 8.5
+        }
+    }
+]

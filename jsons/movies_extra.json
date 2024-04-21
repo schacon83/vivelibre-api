@@ -1,0 +1,28 @@
+[
+    {
+      "name": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "ost": "Thomas Newman",
+      "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler", "Clancy Brown"],
+      "synopsis": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "ratings": {
+          "imdb": 9.3,
+          "rotten_tomatoes": 9.1,
+          "metacritic": 8.0,
+          "filmaffinity": 9.0
+      }
+    },
+    {
+      "name": "The Dark Knight",
+      "director": "Christopher Nolan",
+      "ost": "Hans Zimmer",
+      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine", "Maggie Gyllenhaal"],
+      "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "ratings": {
+          "imdb": 9.0,
+          "rotten_tomatoes": 9.4,
+          "metacritic": 8.4,
+          "filmaffinity": 8.9
+      }
+    }
+]
