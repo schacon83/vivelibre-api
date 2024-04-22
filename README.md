@@ -25,7 +25,7 @@ pip install -r requirements.txt
 Y con esto ya podemos ejecutar la aplicación
 
 ```
-python src/python
+python app
 ```
 
 ## Despliegue
