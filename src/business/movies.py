@@ -7,7 +7,20 @@ from src.api import settings as st
 
 
 def process_movies_data(movies):
-    #  1. Se parte de las peliculas que vienen por parámetro
+    """
+    Recibe una colección de películas y hace las siguientes tareas sobre ella:
+    - Añade nuevas películas alojadas en /jsons/movies_extra.json
+    - Ordena la lista por el nombre de la película.
+    - Crea 3 nuevos ratings entre 5 y 10 en cada película entre 5 y 10
+    sin que se repitan
+    - Ordena de mayor a menor los ratings de cada película.
+    - Limpia y deja legible la 'synopsis' de la película Titanic.
+    - Se dejan solo las películas en las que actúa Leonardo DiCaprio.
+    - Se guarda la media de los ratings de cada película en 'rating_mean'.
+    :param movies: Lista de diccionarios con información de películas
+    :return: Lista de diccionarios filtrados y procesados.
+    """
+    #  1. Se parte de las películas que vienen por parámetro
     with open(
             os.path.join(st.INPUTS_PATH, st.MOVIES_EXTRA_JSON_FILENAME), 'r'
     ) as f:
@@ -59,6 +72,16 @@ def process_movies_data(movies):
 
 
 def _generate_ratings(exclusions, count=3, min_value=5.0, max_value=10.0):
+    """
+    Genera 'n' ratings con valores comprendidos entre un mínimo y un máximo.
+    Excluyendo un listado y evitando que haya ninguno repetido
+    :param exclusions: Lista de valores que no pueden estar
+    entre las nuevas reseñas
+    :param count: Número de reseñas
+    :param min_value: Mínimo valor posible
+    :param max_value: Máximo valor permitido
+    :return: Lista de diccionarios {'nombre_reviewer': rating}.
+    """
     ratings = {}
     index = 0
     while index < count:

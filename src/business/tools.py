@@ -2,6 +2,12 @@ import re
 
 
 def clean_text(text):
+    """
+    Limpia un texto, eliminando información entre etiquetas,
+    caracteres especiales y espacios repetidos
+    :param text: String con el texto
+    :return: Devuelve un texto legible
+    """
     # Expresiones regulares que se van a emplear
     xml_pattern = r'<[^>]*>(.*?)<\/[^>]*>'
     repeated_special_characters = r'([^\w\s])\1+'

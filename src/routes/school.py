@@ -1,9 +1,40 @@
 from cerberus import Validator
 from flask import Blueprint, jsonify, Response, abort, request
+from sqlalchemy.exc import IntegrityError
 
 from src.models import school
 
 school_api = Blueprint('school_api', __name__)
+
+
+@school_api.route(
+    '/school/courses/<int:course_id>/students/<int:student_id>',
+    methods=['post']
+)
+def post_course_student(course_id, student_id):
+    with school.current_session() as session:
+        course = session.query(school.Course).filter_by(
+            course_id=course_id
+        ).first()
+        if not course:
+            abort(404, description='Course not found')
+        student = session.query(school.Student).filter_by(
+            student_id=student_id
+        ).first()
+        if not student:
+            abort(404, description='Student not found')
+
+        course_student = school.CourseStudent(
+            course_id=course_id,
+            student_id=student_id
+        )
+        session.add(course_student)
+        try:
+            session.commit()
+        except IntegrityError:
+            abort(409, description='Student already registered in the course')
+
+    return Response(status=200)
 
 
 @school_api.route(
@@ -105,6 +136,17 @@ def get_professors():
 
 
 @school_api.route(
+    '/school/courses',
+    methods=['get']
+)
+def get_courses():
+    with school.current_session() as session:
+        courses = session.query(school.Course).all()
+
+    return jsonify([course.to_json() for course in courses])
+
+
+@school_api.route(
     '/school/logs',
     methods=['get']
 )
@@ -113,33 +155,6 @@ def get_logs():
         logs = session.query(school.Log).all()
 
     return jsonify([log.to_json() for log in logs])
-
-
-@school_api.route(
-    '/school/courses/<int:course_id>/students/<int:student_id>',
-    methods=['post']
-)
-def post_course_student(course_id, student_id):
-    with school.current_session() as session:
-        course = session.query(school.Course).filter_by(
-            course_id=course_id
-        ).first()
-        if not course:
-            abort(404, description='Course not found')
-        student = session.query(school.Student).filter_by(
-            student_id=student_id
-        ).first()
-        if not student:
-            abort(404, description='Student not found')
-
-        course_student = school.CourseStudent(
-            course_id=course_id,
-            student_id=student_id
-        )
-        session.add(course_student)
-        session.commit()
-
-    return Response(status=200)
 
 
 def to_integer(value):

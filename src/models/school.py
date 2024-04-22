@@ -143,6 +143,8 @@ class Log(db.Model):
 
 
 def log_changes(mapper, connection, target):
+    # Listener que captura los eventos que se producen en la bbdd
+    # y los almancena en la tabla logs
     if isinstance(target, Log):
         return
     session = Session.object_session(target)
@@ -186,6 +188,7 @@ def log_changes(mapper, connection, target):
 
 
 def _initialize_data(session):
+    # Inicializa la bbdd con la información de /jsons/school.json
     with open(os.path.join(st.INPUTS_PATH, st.SCHOOL_JSON_FILENAME), 'r') as f:
         data = json.load(f)
 
@@ -201,6 +204,7 @@ with app.app_context():
     Session = sessionmaker(bind=db.engine)
 
 current_session = scoped_session(Session)
+# Se asocia el listener para los eventos en bbdd
 event.listen(mapper, 'after_insert', log_changes)
 event.listen(mapper, 'after_update', log_changes)
 event.listen(mapper, 'after_delete', log_changes)

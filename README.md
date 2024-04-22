@@ -2,13 +2,13 @@
 
 API de acceso a los endpoints de la prueba técnica de ViveLibre.
 
-Por defecto escucha en el puerto 8008 y se apoya en una base de datos sqllite en memoria.
+Por defecto escucha en el puerto 8008 y se apoya en una base de datos sqlite en memoria.
 
 Esos y otros parámetros se pueden configurar en ```/src/api/settings.py```
 
 
 ## Maintainer
-@schacon83@gmail.com
+schacon83@gmail.com
 
 # Uso
 
@@ -58,21 +58,30 @@ Obtener la lista de cursos de un estudiante en particular
 ```
 GET /school/students/<int:student_id>/courses
 ```
-Filtrar los profesores con una edad comprendida entre los 35 y 50 años
+Filtrar los profesores con una edad comprendida entre los 35 y 50 años.
+
+Si no se especifican parámetros se obtiene el listado completo.
 ```
 GET /school/professors?min_age=30&max_age=50
 ```
-Filtrar los estudiantes que estudian 'Engineering'
+Filtrar los estudiantes que estudian 'Engineering'.
+
+Si no se especifican parámetros se obtiene el listado completo.
 ```
 GET /school/students?career=Engineering
 ```
 Además se han añadido otros endpoints para facilitar la consulta de datos
 
-Consulta de registros modificados en el modelo de datos
+Consulta el listado de cursos guardados en bbdd
+```
+GET /school/courses
+```
+Consulta de registros modificados en el modelo de datos.
+
+(timestamp, operation, table_name, new_values, old_values)
 ```
 GET /school/logs
 ```
-
 
 ### Ejercicio 2:
 

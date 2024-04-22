@@ -1,6 +1,5 @@
 import json
 import random
-import re
 
 from cerberus import Validator
 from flask import Blueprint, Response, abort, request
@@ -66,15 +65,3 @@ def generate_ratings(exclusions, count=3, min_value=5.0, max_value=10.0):
             exclusions.append(rating)
             index += 1
     return ratings
-
-
-def clean_text(text):
-    # Expresiones regulares que se van a emplear
-    xml_pattern = r'<[^>]*>(.*?)<\/[^>]*>'
-    repeated_special_characters = r'([^\w\s])\1+'
-    multiple_blanks = r'\s+'
-
-    text = re.sub(xml_pattern, '', text)
-    text = re.sub(repeated_special_characters, '', text)
-    text = re.sub(multiple_blanks, ' ', text)
-    return text.strip()

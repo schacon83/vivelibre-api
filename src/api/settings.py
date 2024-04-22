@@ -9,7 +9,7 @@ API_HOST = '0.0.0.0'
 API_PORT = 8008
 
 # Cadena de conexión de la bbdd
-# Para la prueba se almacena la información en memoria
+# Para la prueba se almacena la información en una bbdd sqlite en memoria
 CN_STR = 'sqlite:///:memory:'
 
 # Rutas de ficheros de la aplicación
